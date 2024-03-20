@@ -1,0 +1,232 @@
+@font-face {
+    font-family: sansation-light;
+    src: url(fonts/Sansation_Light.ttf);
+}
+@font-face {
+    font-family: sansation;
+    src: url(fonts/Sansation_Regular.ttf);
+}
+@font-face {
+    font-family: redhat;
+    src: url(fonts/RedHatDisplay-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: #f9a906;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+}
+.logo{
+    font-family: sansation-light;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0%;
+}
+
+.navbar a{
+    position: relative;
+    font-family: sansation;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+   
+
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: .3s;
+}
+.navbar a:hover::before{
+width: 100%;
+}
+
+.main{
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: sansation;
+}
+
+#slogan{
+    margin-top: 140px;
+    color: #f9a906;
+
+}
+
+#orangepic{
+    position: relative;
+    top: -470px;
+    left: 0;
+    float: right;
+    width: 512px;
+
+
+}
+
+.main p{
+    color: rgba(30, 30, 30, 1);
+    font-size: 24px;
+    font-family: redhat;
+    margin-top: 40px;
+    width: 440px;
+
+}
+
+.buybox{
+    background-color: aqua;
+    width: 340px;
+    height: 260px;
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.buybox img{
+    width: 340px;
+    height: 260px;
+}
+.buy{
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 160px;
+    left: 70px;
+    
+}
+.buy p{
+    color: #f9a906;
+
+    font-family: redhat;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: auto;
+   left: 70px;
+   top: 12px;
+
+   
+
+}
+.buy p:hover{
+    color: #f9a906;
+
+    font-family: redhat;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: auto;
+   left: 70px;
+   top: 12px;
+   animation-name: grow;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+
+
+}
+
+@keyframes grow{
+    100%{transform :scale(1.4,1.4);}
+}
+
+.bigtext h1{
+    color: #f9a906;
+ 
+}
+.oragesplash{
+    background-color: #f9a906;
+    width: 100%;
+    height: 280px;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.oragesplash p{
+    color: white;
+    font-size: 24px;
+    font-family: redhat;
+   padding: 40px;
+   padding-top: 60px;
+   margin-left:90px;
+   width: 400px;
+}
+.oragesplash h1{
+    color: rgb(0, 0, 0);
+    font-size: 64px;
+    font-family: redhat;
+   padding: 40px;
+   padding-top: 90px;
+   margin-left:600px;
+   width: auto;
+}
+.tallboxx{
+    float: left;
+
+}
+.tallbox:hover{
+    animation-name: grow2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin-right: 40px;
+    margin-top: 60px;
+    position: relative;
+    width: 260px;
+    height: 360px; 
+    background-color: transparent;
+}
+.tallbox{
+
+    margin-right: 40px;
+    margin-top: 60px;
+    position: relative;
+    width: 260px;
+    height: 360px; 
+    background-color: transparent;
+}
+.tallbox img{
+    position: absolute;
+    width: 260px;
+    height: 280px; 
+
+}
+.tallbuy{
+    position: absolute;
+    width: 260px;
+    height: 80px; 
+    background-color: #f9a906;
+    top:280px;
+}
+.tallbuy p{
+    color: white;
+    font-size: 44px;
+    font-family: redhat;
+    margin-left: 90px;
+    padding: 0%;
+    margin-top: 10px;
+}
+@keyframes grow2{
+    100%{transform :scale(1.1,1.1);}
+}
